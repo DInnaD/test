@@ -1,4 +1,4 @@
- window.onload = function(){
+ 
       // Buttons
 	var quickAddBtn = document.getElementById('QuickAdd');
 	
@@ -125,4 +125,4 @@ function validateForm(siteName, siteUrl){
 
   return true;
 }
- }
+ 
