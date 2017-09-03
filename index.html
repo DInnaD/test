@@ -9,7 +9,20 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	   <script>
+	 
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <!--div class="header clearfix">
+        <nav>
+
+        </nav>
+        <h3 class="text-muted">Bookmarker</h3>
+      </div-->
+	       <script>
+		       window.onload = function(){
       // Buttons
 	var quickAddBtn = document.getElementById('QuickAdd');
 	
@@ -25,19 +38,9 @@
 
 	cancelBtn.addEventListener("click", function(){
 		quickAddFormDiv.style.display = "none";
-	});     
-      </script> 
-  </head>
-
-  <body onload="fetchBookmarks()">
-
-    <div class="container">
-      <!--div class="header clearfix">
-        <nav>
-
-        </nav>
-        <h3 class="text-muted">Bookmarker</h3>
-      </div-->
+	});    
+		       }
+      </script>
 <div class="quickadd"><button id="QuickAdd" class="btn btn-circle">
 		<i class="fa fa-plus" aria-hidden="true"></i></button></div>		
 		<div class="quickaddForm">
