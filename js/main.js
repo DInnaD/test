@@ -1,3 +1,20 @@
+ window.onload = function(){
+      // Buttons
+	var quickAddBtn = document.getElementById('QuickAdd');
+	
+	var quickAddFormDiv = document.querySelector('.quickaddForm');
+	
+	var cancelBtn = document.getElementById('Cancel');
+       
+        
+    quickAddBtn.addEventListener("click", function(){
+		// display the form div
+		quickAddFormDiv.style.display = "block";
+	});
+
+	cancelBtn.addEventListener("click", function(){
+		quickAddFormDiv.style.display = "none";
+	});    
 // Listen for form submit
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
 
@@ -50,7 +67,7 @@ function saveBookmark(e){
   // Prevent form from submitting
   e.preventDefault();
 }
-
+ 
 // Delete bookmark
 function deleteBookmark(url){
   // Get bookmarks from localStorage
@@ -108,3 +125,4 @@ function validateForm(siteName, siteUrl){
 
   return true;
 }
+ }
